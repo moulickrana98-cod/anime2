@@ -31,7 +31,7 @@ export default function Footer() {
             {/* Instagram Section */}
             <div className={styles.instaBox}>
               <img 
-                src="/animetreasury44_qr.png" 
+                src="/images/animetreasury44_qr.png" 
                 alt="Instagram QR" 
                 className={styles.qr}
               />
