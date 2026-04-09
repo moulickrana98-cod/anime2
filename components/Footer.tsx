@@ -25,8 +25,28 @@ export default function Footer() {
           </div>
           <div className={styles.contactCol}>
             <h4 className={styles.colTitle}>Contact Us</h4>
-            <p className={styles.contactLine}>📧 hello@animetreasury.in</p>
-            <p className={styles.contactLine}>📱 @animetreasury</p>
+
+            <p className={styles.contactLine}>📧 animetreasury44@gmail.com</p>
+
+            {/* Instagram Section */}
+            <div className={styles.instaBox}>
+              <img 
+                src="/animetreasury44_qr.png" 
+                alt="Instagram QR" 
+                className={styles.qr}
+              />
+              <p className={styles.contactLine}>
+                📱 <a 
+                  href="https://instagram.com/animetreasury44" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className={styles.instaLink}
+                >
+                  @animetreasury44
+                </a>
+              </p>
+            </div>
+
             <p className={styles.contactLine}>🇮🇳 India</p>
           </div>
         </div>

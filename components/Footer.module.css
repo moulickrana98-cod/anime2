@@ -105,3 +105,24 @@
 @media (max-width: 400px) {
   .top { grid-template-columns: 1fr; }
 }
+.instaBox {
+  margin-top: 10px;
+  text-align: left;
+}
+
+.qr {
+  width: 120px;
+  height: 120px;
+  border-radius: 12px;
+  margin-bottom: 8px;
+}
+
+.instaLink {
+  color: #ff2d95;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.instaLink:hover {
+  text-decoration: underline;
+}
