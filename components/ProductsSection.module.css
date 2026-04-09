@@ -1,0 +1,102 @@
+.section {
+  padding: 6rem 0;
+  position: relative;
+  z-index: 1;
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--accent-purple);
+  margin-bottom: 12px;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: clamp(36px, 5vw, 56px);
+  color: var(--text-primary);
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+
+.sub {
+  color: var(--text-secondary);
+  font-size: 15px;
+  line-height: 1.7;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.filters {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.filterBtn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text-secondary);
+  font-size: 13px;
+  font-weight: 600;
+  font-family: var(--font-body);
+  padding: 8px 18px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.2s;
+  letter-spacing: 0.3px;
+}
+
+.filterBtn:hover {
+  border-color: rgba(124,58,237,0.4);
+  color: var(--text-primary);
+}
+
+.filterBtn.active {
+  background: var(--accent-purple);
+  border-color: var(--accent-purple);
+  color: #fff;
+}
+
+.filterCount {
+  background: rgba(255,255,255,0.12);
+  font-size: 11px;
+  padding: 1px 7px;
+  border-radius: 50px;
+  font-weight: 700;
+}
+
+.filterBtn.active .filterCount {
+  background: rgba(255,255,255,0.2);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+}
